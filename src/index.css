@@ -1,0 +1,107 @@
+#calculator, body{
+  width:100vw;
+  height:100vh;
+}
+#calculator{
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  background-color:#0097e6;
+  border:solid 2.5px #2f3640;
+  border-radius:10px;
+  
+}
+#app{
+  width:65%;
+  height:80%;
+  display:grid;
+  grid-template-columns:1fr 1fr 1fr;
+  grid-template-areas:
+    "disp disp disp"
+    "btn7 btn8 btn9"
+    "btn4 btn5 btn6"
+    "btn1 btn2 btn3"
+    "btn0 mult divide"
+    "sum subt   eq"
+    "decimal CE eq";
+  box-shadow:-9px 6px 25px ;
+}
+#app >*{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+#display{
+  grid-area:disp;
+  background:#2f3640;
+  width:100%;
+  height:100%;
+  color:#fbc531;
+  font-size:30px;
+  text-shadow:-3px 3px 16px;
+  font-family: 'Modern Antiqua', cursive;
+}
+button{
+  transition:0.9s;
+ background:#e1b12c;
+  border: none ;
+  outline:none;
+  font-size:16px;
+  color:#2f3640;
+  font-family: 'Modern Antiqua', cursive;
+  
+}
+button:hover{
+  background:#718093;
+  box-shadow:-1px 0.5px 1px;
+}
+#clear{
+  background:#c23616;
+  color:white;
+}
+#zero{
+  grid-area:btn0;
+  
+}
+#one{
+  grid-area:btn1;
+}
+#two{
+  grid-area:btn2;
+}
+#three{
+ grid-area:btn3;
+}
+#four{
+  grid-area:btn4;
+}
+#five{
+  grid-area:btn5;
+}
+#six{
+  grid-area:btn6;
+}
+#seven{
+  grid-area:btn7;
+}
+#eight{
+  grid-area:btn8;
+}
+#nine{
+  grid-area:btn9;
+}
+#add{
+  grid-area:sum;
+}
+#subtract{
+  grid-area:subt;
+}
+#multiply{
+  grid-area:mult;
+}
+#divide{
+  grid-area:divide;
+}
+#equals{
+  grid-area:eq;
+}
